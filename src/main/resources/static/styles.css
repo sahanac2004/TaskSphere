@@ -1,0 +1,112 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.centered-form {
+  width: 100%;
+  max-width: 500px;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+body.bg-dark .centered-form {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.task-card {
+  margin-bottom: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+}
+
+.task-card .card-body {
+  padding: 20px;
+}
+
+.task-card .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.task-card .card-subtitle {
+  font-size: 0.875rem;
+}
+
+.due-soon {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.completed-task {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.comment {
+  background-color: #e9ecef;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Dark mode overrides */
+body.bg-dark {
+  background-color: #121212 !important;
+}
+
+body.bg-dark .form-control,
+body.bg-dark .card,
+body.bg-dark .card-body,
+body.bg-dark .navbar,
+body.bg-dark .comment,
+body.bg-dark .centered-form {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-color: #555;
+}
+
+body.bg-dark .form-control::placeholder {
+  color: #cccccc;
+}
+
+body.bg-dark input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+body.bg-dark .btn-outline-light {
+  color: #fff;
+  border-color: #fff;
+}
+
+body.bg-light .btn-outline-light {
+  color: #000;
+  border-color: #000;
+}
+
+.btn-dark {
+  background-color: #333 !important;
+  border-color: #444;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
